@@ -1,0 +1,557 @@
+/*
+NAV
+*/
+#ct-nav-main {position: static;}
+#ct-nav-main  #ct-topNav .first-item a {padding-left: 0;}
+
+#nav-lyv {
+    width: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;}
+
+#ct-nav-main #ct-topNav li a.current_page span {
+	border-bottom: 4px solid #ea6747!important;
+	height: 31px;
+	display: block;
+	position: relative;
+	z-index: 6;
+}
+	
+#social-media-icons-comparison {
+	position: absolute;
+	top: 0;
+	right: 0;
+	}
+
+#social-media-icons-comparison li {
+	width:27px;
+	margin: 0!important;	
+}
+	
+#social-media-icons-comparison li a {
+	color: #FFF;
+	text-transform: lowercase !important;
+	z-index: 1;
+	padding: 0;
+	background-color: rgba(69,183,231,0) !important;
+	-webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	-o-transition:all .25s ease;
+	transition:all .25s ease;
+}
+
+
+
+#social-media-icons-comparison li a:hover {
+	background-color: rgba(69,183,231,1) !important;
+}
+	
+#social-media-icons-comparison li {
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	display: inline-block;}
+	
+/*
+COMPARISON HOME */
+
+
+#search-results-title { margin-bottom: 0;}
+#new-search-btn {position: absolute; right:0; top:-22px; width:309px; height: 126px; background: url(../images/comparison-tool/new-search-button.png) top left no-repeat; text-indent: -3000px;}
+
+
+a.submit-btn {
+	color: #FFF;
+	background-color: #0081c3;
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	font-size: 14px;
+	line-height: 27px;
+	padding-left: 7px;
+	padding-right: 7px;
+	display: inline-block;}
+	
+p.blue-and-bold {
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	font-size: 18px;
+	color: #0081c3;}
+	
+
+.push_three.seven.columns h2 {
+	margin-top: -60px;}
+
+
+
+
+
+#ct-main-body h2 {font-size: 40px;}
+#ct-main-body p {line-height: 1.5em;}
+
+#form-section-issues h3,
+#section-results h3 {font-size: 33px;}
+	
+#form-section-issues h3,
+#form-section-issues .form-section-body ul li,
+#summary .orange a, #summary .orange {
+	color: #e96748;}
+	
+#form-section-countries h3,
+#form-section-countries .form-section-body ul li,
+#summary .violet a, #summary .violet {
+	color: #924399;}
+
+#summary .item-menu {margin:0; padding: 0; color:#999!important;}
+#summary .summary-title, #summary .item-menu a {color:#999!important;}
+	
+#form-section-parties-national h3,
+#form-section-parties-national .form-section-body ul li,
+#summary .green a, #summary .green {
+	color: #195d2f;}
+	
+#form-section-parties-european h3,
+#form-section-parties-european .form-section-body ul li,
+#summary .blue a, #summary .blue {
+	color: #0081c3;}
+
+.form-section-body ul li {
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	font-size: 18px;}
+
+
+.form-section-body ul li label {
+	display: block;
+	padding-left: 20px;
+	cursor:pointer;
+	background-position: 0 8px!important;
+	background-repeat: no-repeat;
+}
+
+.form-section-body ul li label span.checkbox { display: inline-block; width:10px; height: 10px; position: relative; left:-20px; opacity:0; -webkit-transition:opacity .25s ease; -moz-transition:opacity .25s ease; -o-transition:opacity .25s ease; transition:opacity .25s ease;}
+.form-section-body ul li label.checked span.checkbox {opacity:1;}
+.no-opacity .form-section-body ul li label span.checkbox {display: none;}
+
+.form-section-body ul li label input { display: none;}
+
+
+
+#form-section-issues .form-section-body  ul li label {background-image: url(../images/comparison-tool/checkboxes/issues-vuoto.png);}
+#form-section-issues .form-section-body  ul li label span.checkbox, .no-opacity #form-section-issues .form-section-body  ul li label.checked {background-image: url(../images/comparison-tool/checkboxes/issues-pieno.png);}
+
+#form-section-countries .form-section-body  ul li label {background-image: url(../images/comparison-tool/checkboxes/countries-vuoto.png);}
+
+#form-section-countries .form-section-body  ul li label span.checkbox, .no-opacity #form-section-issues .form-section-body  ul li label.checked {background-image: url(../images/comparison-tool/checkboxes/countries-pieno.png);}
+
+#form-section-parties-national .form-section-body  ul li label {background-image: url(../images/comparison-tool/checkboxes/national-vuoto.png);}
+#form-section-parties-national .form-section-body  ul li label span.checkbox, .no-opacity #form-section-parties-national .form-section-body  ul li label.checked {background-image: url(../images/comparison-tool/checkboxes/national-pieno.png);}
+
+#form-section-parties-european .form-section-body  ul li label {background-image: url(../images/comparison-tool/checkboxes/european-vuoto.png);}
+#form-section-parties-european .form-section-body  ul li label span.checkbox, .no-opacity #form-section-parties-european .form-section-body  ul li label.checked {background-image: url(../images/comparison-tool/checkboxes/european-pieno.png);}
+
+
+#ct-home-fish { padding: 45px 0; text-align: center;}
+#ct-home-fish img {max-width: 700px; width: 100%;}
+
+
+	
+#ct-main-form h3 span,
+#ct-main-body h3 span {
+	background-repeat: no-repeat;
+	width: 23px;
+	height: 23px;
+	display: inline-block;
+	margin-left: -28px;
+	margin-right: 5px;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	transition:all .3s ease;
+	
+	}
+
+#ct-main-form .expanded h3 span,
+#ct-main-body .expanded h3 span {
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
+
+	
+#form-section-issues h3 span {
+	background-image: url(../images/comparison-tool/arrows/issues-freccia-destra.png);}
+
+#form-section-countries h3 span {
+	background-image: url(../images/comparison-tool/arrows/countries-freccia-destra.png);}
+
+#form-section-parties-national h3 span {
+	background-image: url(../images/comparison-tool/arrows/national-freccia-destra.png);}
+	
+#form-section-parties-european h3 span {
+	background-image: url(../images/comparison-tool/arrows/european-freccia-destra.png);}
+
+
+/*
+	SIDEBAR
+*/
+
+#ct-sidebar {padding-top: 120px;}
+
+/*
+	ABOUT
+*/
+
+span#seahorse {
+	position: absolute;
+	right: -300px;
+	top: 15px;}
+	
+span#bulb {
+	position: absolute;
+	z-index: -1;
+	bottom: -120px;
+	left: -335px;}
+	
+/*
+	LEARN MORE
+*/
+
+span#balloon {
+	position: absolute;
+	z-index: -1;
+	right: -455px;
+	top: 30px;}
+	
+span#tv {
+	position: absolute;
+	z-index: -1;
+	bottom: -65px;
+	left: -380px;} 
+
+#learn-more-page p a { 
+	font-family: 'MetaWebPro-BlackIta', sans-serif;	
+}
+
+/*
+	COMPARISON RESULTS
+*/
+
+#form-section-body-results h3.green-and-bold {
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	font-size: 35px;
+	font-style: normal;
+	color: #195d2f;
+	}
+
+
+	
+#form-section-body-results h3.orange-and-bold {
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	font-size: 35px !important;
+	font-style: normal;
+	color: #e96748;
+	margin-bottom: 20px;}
+	
+#form-section-body-results span.orange-and-bold {
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	font-size: 25px !important;
+	font-style: normal;
+	color: #e96748;
+	position: absolute;
+	left: -230px;
+	margin-top: 300px;}
+	
+#form-section-body-results h3.blue-and-bold {
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	font-size: 35px !important;
+	font-style: normal;
+	color: #45b7e7;
+	position: absolute;
+	margin-top: -83px;
+	margin-left: 164px;
+}
+
+#form-section-body-results span img {
+	display: block;
+	margin-bottom: 25px;}
+	 
+#form-section-body-results .single-party {margin-bottom: 72px;}
+#form-section-body-results .first-column {clear: both; margin-left: 0;}
+
+
+#form-section-body-results .single-issue-title { background: url(../images/comparison-tool/rope.png) bottom left repeat-x; padding-bottom: 24px;}
+
+#form-section-body-results h3.single-country-title {
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	font-size: 55px;
+	font-style: normal;
+	color: #924399;
+	}
+
+
+
+
+#form-section-body-results h3.european-political-parties-heading {
+	font-family: 'MetaWebPro-BlackIta', sans-serif;
+	font-size: 55px;
+	font-style: normal;
+	color:#0099cc;
+	border-top:20px solid; padding-top:36px;
+}
+
+
+.single-country-results .single-party {overflow: hidden;}
+
+	 
+.party-logo {
+	text-align: center;}
+	
+.party-logo img {
+	height: 100px;
+	margin-bottom: 25px;
+	margin-top: 25px;}
+
+#form-section-body-results h3 span {
+	background-image: url(../images/comparison-tool/arrows/issues-freccia-giu.png);}
+
+hr.red-line {
+	width: 100%;
+	height: 0;
+	border: none;
+	border-bottom: 1px solid #e96748; 
+	padding-top: 65px;}
+	
+#results-education {
+	position: relative;
+	left: 169px;
+	top: 240px;}
+
+#summary {
+	position: relative;}
+	
+#summary ul.menu {
+	list-style: none;
+	font-size: 14px;
+	position: fixed;
+	
+}	
+	
+a.summary-title {
+	text-transform: uppercase;
+	font-family: 'MetaWebPro-BlackIta', sans-serif;}	
+
+#summary .summary-remove-link {position: relative; top:-1px; margin-right: 5px;}
+
+	
+/*
+	FOOTER
+*/
+
+#ct-footer {
+	background-color: #90d8f7;}
+	
+#main-footer ul li a,
+#footer-copyright-info p {
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'MetaWebPro-Book';
+	font-size: 14px;
+	font-style: normal;}
+
+#ct-footer #footer-copyright-info a {
+	text-decoration: underline;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'MetaWebPro-Book';
+	font-size: 11px;
+	font-style: normal;
+	margin-left: 30px;}
+
+#main-footer {
+	padding-top: 90px;}
+	
+#ct-footer li.append-bottom {
+	margin-bottom: 20px;}
+		
+#main-footer #footer-sponsor-list {
+    margin-top: 0px;}
+	
+#footer-sponsor-list a {
+	margin-left: 20px;}
+	
+#footer-sponsor-list a img {
+	height: 200px;}
+	
+.push_two .two.columns {
+	position: relative;}
+	
+#main-footer a#footer-lyv-tag {
+	background-image: url(../images/lyv-flag.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -90px;
+	left: 0;
+	width: 60px;
+	height: 120px;}
+	
+#brando {
+	position: absolute;
+	bottom: -112px;
+	left: 77px;}
+	
+
+#ct-footer #footer-sponsors {
+	margin-bottom: 0;}
+
+#ct-footer #ct-footer-in-cooperation-with { display: inline; margin-left: 20px;}
+
+#ct-footer #ct-footer-in-cooperation-with span {width:200px; height: 200px; line-height: 200px; color:#fff; background: #43b7e8; text-align: center; display: inline-block; vertical-align: top; font-family: 'MetaWebPro-BlackIta', sans-serif; }
+
+#mobile-version-overlay {position: absolute; top:0; left:0; width:100%; height: 100%; z-index: 100000; background: #fff;}
+#mobile-version-overlay img {width: 100%;}
+
+.mobile-version #fixedBox, .mobile-version #ct-footer {display: none;}
+
+
+/*
+	Single Pages
+*/
+
+#ct-main-body {
+	position: relative;}
+	
+#ct-main-body .page-heading {font-size: 24px;}
+	
+	.blue-heading {color:#0083bd;}
+	.red-heading {color:#ea6747;}
+
+	.paragraph-heading {font-size: 16px; padding: 0;}
+	
+	#page-content {padding-top: 50px; padding-bottom: 140px;}
+	
+	#about-page-main-heading {margin-bottom: 64px; padding-bottom: 0;}
+	#about-page-secondary-heading { position:relative; margin-bottom: 32px;}
+	#ct-main-body #about-page-secondary-heading span {background: url(../images/comparison-tool/red-baloon.png) center no-repeat; position: absolute; left:-25px; top:-15px; width:33px; height: 64px;}
+	
+	#ct-main-body p.append-bottom {margin-bottom: 32px;}
+
+	#learn-more-page #page-content {padding-top: 20px;}
+	#learn-more-page h2 { margin-top: 0;}
+
+
+	
+/*
+	FORM SECTIONS
+*/
+
+#ct-main-form {margin-top:32px;}
+#ct-main-form .form-section-body {opacity: 0; height: 0; overflow: hidden; -webkit-transition:opacity .35s ease; -moz-transition:opacity .35s ease; -o-transition:opacity .35s ease; transition:opacity .35s ease;}
+#ct-main-form .expanded .form-section-body  {opacity: 1; height: auto; }
+*[data-ng-click] {cursor: pointer;}
+
+#get-result-btn {position: absolute; width:201px; height: 140px; left:-300px; top:200px; background: url(../images/comparison-tool/get-results.png);}
+
+
+/*
+	ANIMATE
+*/
+
+@-webkit-keyframes fadeAndScrollTop {
+from { opacity:0; padding-top: 20px;}
+to { opacity:1; padding-top: 0px;}
+}
+
+@-moz-keyframes fadeAndScrollTop {
+from { opacity:0; padding-top: 20px;}
+to { opacity:1; padding-top: 0px;}
+}
+
+@-o-keyframes fadeAndScrollTop {
+from { opacity:0; padding-top: 20px;}
+to { opacity:1; padding-top: 0px;}
+}
+
+@keyframes fadeAndScrollTop {
+from { opacity:0; padding-top: 20px;}
+to { opacity:1; padding-top: 0px;}
+}
+
+/*
+ *
+ *	fadeInAtStart
+ *
+ */
+
+@-webkit-keyframes fadeInAtStart {
+from { opacity:0;}
+to { opacity:1; }
+}
+
+@-moz-keyframes fadeInAtStart {
+from { opacity:0;}
+to { opacity:1; }
+}
+
+@-o-keyframes fadeInAtStart {
+from { opacity:0;}
+to { opacity:1; }
+}
+
+@keyframes fadeInAtStart {
+from { opacity:0;}
+to { opacity:1; }
+}
+
+
+/*
+ *
+ *	swing
+ *
+ */
+
+
+@-webkit-keyframes swing {
+0%, 100% { margin-top:0; margin-bottom:0; }
+50% { margin-top:20px; margin-bottom:10px;}
+}
+
+@-moz-keyframes swing {
+0%, 100% { margin-top:0; margin-bottom:0; }
+50% { margin-top:20px; margin-bottom:10px;}
+}
+
+@-o-keyframes swing {
+0%, 100% { margin-top:0; margin-bottom:0; }
+50% { margin-top:20px; margin-bottom:10px;}
+}
+
+@keyframes swing {
+0%, 100% { margin-top:0; margin-bottom:0; }
+50% { margin-top:20px; margin-bottom:10px;}
+}
+
+
+
+.fadeAndScrollTop {
+	-webkit-animation: fadeAndScrollTop 0.55s steps(20) 1;
+	-moz-animation: fadeAndScrollTop 0.55s steps(20) 1;
+	-o-animation: fadeAndScrollTop 0.55s steps(20) 1;
+	animation: fadeAndScrollTop 0.55s steps(20) 1;	
+	-webkit-animation-timing-function: ease-in-out;	
+	-moz-animation-timing-function: ease-in-out;	
+	-o-animation-timing-function: ease-in-out;	
+	animation-timing-function: ease-in-out;
+}
+
+.fadeInAtStart {
+	-webkit-animation: fadeInAtStart 0.25s steps(20) 1;
+	-moz-animation: fadeInAtStart 0.25s steps(20) 1;
+	-o-animation: fadeInAtStart 0.25s steps(20) 1;
+	animation: fadeInAtStart 0.25s steps(20) 1;	
+	-webkit-animation-timing-function: ease-in-out;	
+	-moz-animation-timing-function: ease-in-out;	
+	-o-animation-timing-function: ease-in-out;	
+	animation-timing-function: ease-in-out;
+}
+
+.swing, .swing-4s { -webkit-animation: swing 4s steps(40) infinite; -moz-animation: swing 4s steps(40) infinite; -o-animation: swing 4s steps(40) infinite; animation: swing 4s steps(40) infinite; -webkit-animation-timing-function: ease-out; -moz-animation-timing-function: ease-out; -o-animation-timing-function: ease-out; animation-timing-function: ease-out;}
+
+

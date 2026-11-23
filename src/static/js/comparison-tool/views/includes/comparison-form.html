@@ -1,0 +1,102 @@
+		<h2>Youth issues: Who says what?</h2>
+		<p>“Youth Issues: Who says what?” is a simple, non-partisan tool that compares the positions and views on relevant topics to youth of political parties running for the European Elections 2014.</p>
+
+		<p>The tool encompasses European as well as national political parties and gives you the opportunity to compare issues between parties and countries on themes like education, employment, digital rights, the Future of Europe, political participation, the Environment and Investment in Youth.</p>	
+
+		<p>Once you know what they promise, it’s time to make your choice!</p>
+
+		<p class="blue-and-bold">
+			Click to expand and make a selection.<br/>
+			Then click on the balloon to get results!
+		</p>
+
+		<p class="fadeInAtStart" data-ng-show="selectedValues.issues.length>0 && selectedValues.parties.length>=1">
+			<a id="get-result-btn" data-ng-click="compare();" class="submit-btn  swing">Get results</a>
+		</p>
+
+		<div id="ct-main-form" class="prepend-top fadeInAtStart" data-ng-controller="formController">
+		
+			<div id="form-section-issues" class="form-section" data-ng-class="{'expanded':formSections['issues'].expanded==true}">				
+				<header>
+					<h3 data-ng-click="formSections['issues'].expanded = !formSections['issues'].expanded"><span></span>Key Issues</h3>
+				</header>
+				<div class="form-section-body">
+					<ul>
+						<li data-ng-repeat="issue in issues">
+							<label data-ng-class="{'checked':issue.checked == true}">
+								<span class="checkbox"></span>
+								<input type="checkbox" value="{{issue.category_id}}" data-ng-checked="issue.checked" data-ng-click="issue.checked = !issue.checked; changeFormValue('issues',issue);" /> {{issue.category_name}} <span data-ng-if="issue.category_name == 'Education'">(only available for European Political Parties)</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+			
+			</div>
+			
+			<div id="form-section-countries" class="form-section" data-ng-class="{'expanded':formSections['countries'].expanded==true}">
+				
+				<header>
+					<h3 data-ng-click="formSections['countries'].expanded = !formSections['countries'].expanded"><span></span>Countries</h3>
+				</header>
+				
+				<div class="form-section-body row">
+				
+					<div data-ng-repeat="column in countriesColumns" class="four columns">
+						<ul>
+							<li data-ng-repeat="country in column">
+								<label data-ng-class="{'checked':country.checked == true}">
+									<span class="checkbox"></span>
+									<input type="checkbox" value="{{country.market_id}}" data-ng-checked="country.checked" data-ng-click="country.checked = !country.checked; changeFormValue('countries',country);" /> {{country.country_name}} <span data-ng-if="country.country_name=='Malta'">(coming soon)</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			
+			</div>
+
+			<div id="form-section-parties-national" class="form-section" data-ng-class="{'expanded':formSections['national-political-parties'].expanded==true}">
+				
+				<header>
+					<h3 data-ng-click="formSections['national-political-parties'].expanded = !formSections['national-political-parties'].expanded"><span></span>National Political Parties</h3>
+				</header>
+				<div class="form-section-body">
+					<ul>
+						<li class="error" data-ng-if="parties.national==false;">You must choose at lest one country in order to select a national party</li>
+						<li data-ng-repeat="party in parties.national">
+							<label data-ng-class="{'checked':party.checked == true}">
+								<span class="checkbox"></span>
+								<input type="checkbox" value="{{party.party_id}}" data-ng-checked="party.checked" data-ng-click="party.checked = !party.checked; changeFormValue('national_parties',party);" /> {{party.party_name}}
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="form-section-parties-european" class="form-section" data-ng-class="{'expanded':formSections['european-political-parties'].expanded==true}">
+				
+				<header>
+					<h3 data-ng-click="formSections['european-political-parties'].expanded = !formSections['european-political-parties'].expanded"><span></span>European Political Parties</h3>
+				</header>
+				<div class="form-section-body">
+				
+					<ul>
+						<li class="error" data-ng-if="parties.european==false;">You must choose at lest one country in order to select a national party</li>
+						<li data-ng-repeat="party in parties.european">
+							<label data-ng-class="{'checked':party.checked == true}">
+								<span class="checkbox"></span>
+								<input type="checkbox" value="{{party.party_id}}" data-ng-checked="party.checked" data-ng-click="party.checked = !party.checked; changeFormValue('european_parties',party);" /> {{party.party_name}}
+							</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+
+		
+		</div>
+<div id="ct-home-fish" class="row">
+	<a href="http://www.makeyourchoice.eu" target="_blank"><img src="/images/comparison-tool/home-fish.png" /></a>	
+</div>

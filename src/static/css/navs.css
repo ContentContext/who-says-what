@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	/*
+	 * NAV
+	 */
+	
+	body {padding-top:100px;}
+	
+	#fixedBox {position:fixed; top:0; left:0; width:100%; z-index:10;}
+	#fixedBox .inner {position:relative}
+
+
+	#default-main-header #nav {font-family:'MetaWebPro-BlackIta', sans-serif;}
+	
+	#default-main-header .navbar, #default-main-header .navbar li, #default-main-header .navbar li a {background:#333!important; height:27px; line-height:27px; box-shadow:none!important;}
+	
+	 #default-main-header .navbar li {margin:0 5px;}
+	 #default-main-header .navbar li a {display:block; line-height:30px; text-transform:uppercase; font-size:14px; text-shadow:none;}
+	 #default-main-header .navbar li a.current_page {color:#ea6747; }
+	 #default-main-header #topNav li a.current_page span {border-bottom:4px solid #ea6747!important; height:31px; display:block; position:relative; z-index:6;}
+	 
+	#default-main-header .navbar li.log-link a { background: #4e4e4e!important; margin: 5px 0; line-height: 21px; height: 18px; padding: 0 7px;}
+	 
+
+	#default-main-header { background:#333; height:27px; position:relative; }
+	#default-main-header #topNav {margin-left:190px;}
+	#default-main-header #topNav li {float:left;}
+
+
+
+	#nav {margin-bottom:0;}
+	/*#navToggler {position:absolute; z-index:6; right:10px; top:5px;}*/
+	#country-menu {  position:relative; z-index:5;}
+	#country-menu .row {position:relative; height:82px; }
+	#country-menu #brand { position:absolute; top:-40px; left:0;}
+	    
+	.market-be #country-menu h2, .market-fi #country-menu h2 {font-size:18px;}
+		
+	#country-menu h2 { font-size:24px; font-family:'MetaWebPro-BlackIta', sans-serif; padding:0;}
+	#country-menu h2 a {color:#fff;}
+	#country-menu h2 a#countryToggler {color:#fff; cursor:pointer; line-height:30px; display:inline-block; padding:5px 10px; width:650px;}
+	#country-menu h2 a#countryToggler:hover {background-color:rgba(0,0,0,.1);}
+	
+	#country-list .locale_switcher a{ padding:0;}
+	#country-list .locale_switcher a:hover { background:none; color:#444;}
+	#country-list .locale_switcher .locale_divider {color:#fff;}
+	
+	#country-list {position:absolute; bottom:5px; left:198px;}
+	
+	#country-list-panel {position:absolute; left:0; top:108px;  width:100%; z-index:4;}
+	
+	#country-list-panel #country-list-panel-inner {height:0; overflow:hidden;}
+	.active #country-list-panel-inner {height:180px!important;}
+	
+	#country-list-panel-inner li a {font-family:'MetaWebPro-BlackIta', sans-serif; color:#fff; font-size:14px; white-space:nowrap; font-size:12px;}
+	#country-list-panel-inner li a:hover {color:#333;}
+
+	#country-list-panel-inner li a:hover {color:#333;}
+	#country-list-panel-inner li a.current_board, #country-list-panel-inner li a.current_board:hover {color:#fff; background:#ea6747; -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px; padding:6px 8px; margin-left:-8px; }
+
+	#country-list-panel-inner .first_column {margin-left:210px;}
+
+	/*
+	main menu
+	*/
+	
+	#topNav li.what-ask-link {position:relative;}
+	#topNav li.what-ask-link ul.main-menu {	font-family: 'MetaWebPro-BookIta', sans-serif; background: #e8683b; width:390px; color:#fff; font-size:14px; text-transform: none; position: absolute; top:27px; left:14px; z-index:-1; display: none; height: 23px; overflow: hidden;}
+	.market-eu #topNav li.what-ask-link:hover ul.main-menu	{z-index:10; display: block;}
+	#topNav li.what-ask-link ul.main-menu li {background: none!important;}
+	#topNav li.what-ask-link ul.main-menu li a {background: none!important; line-height: 23px; padding: 0 5px;}
+	#topNav li.what-ask-link ul.main-menu li a:hover {color:#444444;}
+	
+	
+	/* COLORS	*/
+	#country-menu, #country-list-panel, .market-eu #country-menu, .market-eu #country-list-panel {background-color:#0081c3;}
+	
+		.market-at #country-menu, .market-at #country-list-panel {background-color:#e10613;}
+		.market-be #country-menu, .market-be #country-list-panel {background-color:#e63a30;}
+		.market-bg #country-menu, .market-bg #country-list-panel {background-color:#e10613;}
+		.market-cy #country-menu, .market-cy #country-list-panel {background-color:#fcc709;}
+		.market-hr #country-menu, .market-hr #country-list-panel {background-color:#e6352b;}
+		.market-cz #country-menu, .market-cz #country-list-panel {background-color:#214694;}
+		.market-dk #country-menu, .market-dk #country-list-panel {background-color:#e10613;}
+		.market-ee #country-menu, .market-ee #country-list-panel {background-color:#0684c3;}
+		.market-fi #country-menu, .market-fi #country-list-panel {background-color:#0985c7;}
+		.market-fr #country-menu, .market-fr #country-list-panel {background-color:#e6352b;}
+		.market-de #country-menu, .market-de #country-list-panel {background-color:#000000;}
+		.market-gr #country-menu, .market-gr #country-list-panel {background-color:#0669b0;}
+		.market-hu #country-menu, .market-hu #country-list-panel {background-color:#e63a30;}
+		.market-ie #country-menu, .market-ie #country-list-panel {background-color:#f08e1b;}
+		.market-lv #country-menu, .market-lv #country-list-panel {background-color:#ab1817;}
+		.market-lt #country-menu, .market-lt #country-list-panel {background-color:#f8b510;}
+		.market-lu #country-menu, .market-lu #country-list-panel {background-color:#e63a30;}
+		.market-mt #country-menu, .market-mt #country-list-panel {background-color:#dc131f;}
+		.market-nl #country-menu, .market-nl #country-list-panel {background-color:#c81a24;}
+		.market-pl #country-menu, .market-pl #country-list-panel {background-color:#e63a30;}
+		.market-pt #country-menu, .market-pt #country-list-panel {background-color:#047e36;}
+		.market-ro #country-menu, .market-ro #country-list-panel {background-color:#e31f1f;}
+		.market-sk #country-menu, .market-sk #country-list-panel {background-color:#29337a;}
+		.market-sl #country-menu, .market-sl #country-list-panel {background-color:#c81a24;}
+		
+		.market-es #country-menu, .market-es #country-list-panel {background-color:#e21417;}
+		.market-se #country-menu, .market-se #country-list-panel {background-color:#0473b8;}
+		.market-uk #country-menu, .market-uk #country-list-panel {background-color:#203669;}
+		
+		.market-it #country-menu, .market-it #country-list-panel {background-color:#e63a30;}
+
+	.it_IT #country-menu, .it_IT #country-list-panel {background-color:#e63a30;}
+		
+		
+		#country-list-panel-inner .single-column {margin-right:55px; margin-left:0}
+		#country-list-panel-inner .column-0 {margin-right:110px; }
+		#country-list-panel-inner .column-4 {margin-right:75px; }
+		#country-list-panel-inner .column-20 {margin-right:35px; }
+		#country-list-panel-inner .first_column { margin-left:210px; margin-right:20px;}
+		
+	/*
+		LYV Europe = 0081c3
+		LYV Lëtzebuerg (Luxemburg) = e63a30
+		LYV Italia (Italy) = e63a30
+		LYV Malta (Malta) = dc131f
+		LYV United Kingdom = 203669
+		LYV France (France) = e6352b
+		LYV Suomi - Finland (Finland) = 0985c7
+		LYV Belgie - Belgique - Belgien (Belgium) = e63a30
+		LYV Ελλάδα (Greece) = 0669b0
+		LYV България (Bulgaria) = e10613
+		LYV Magyarország (Hungary) = e63a30
+		LYV Κύπρος (Cyprus) = fcc709
+		LYV Deutschland (Germany) = 000000
+		LYV Polska (Poland) = e63a30
+		LYV Slovensko (Slovakia) = 29337a
+		LYV Sverige (Sweden) = 0473b8
+		LYV Espana (Spain) = e21417    
+		LYV Slovenija (Slovenia) = c81a24
+		LYV Romania (Romania) = e31f1f
+		LYV Lietuva (Lithuania) = f8b510
+		LYV Portugal (Portugal) = 047e36    
+		LYV Latvija (Latvia) = ab1817
+		LYV Hrvatska (Croatia) = e6352b
+		LYV Eesti Vabariik (Estonia) = 0684c3
+		LYV Österreich (Austria) = e10613
+		LYV Česká republika (Czech Republic) = 214694
+		LYV Danmark (Denmark) = e10613
+		LYV Nederland (Holland) = c81a24
+		LYV Eire - Ireland (Ireland) = f08e1b	
+	*/
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) { 
+
+	 #default-main-header .navbar li {margin:0 3px;}
+	 #default-main-header .navbar li a {font-size:12px; }
+	#navToggler {display:none;}
+}
+
+@media only screen and (max-width: 768px) { 
+
+	body {padding-top:0;}
+	#fixedBox {position:static;}
+	
+	#nav {position:relative; z-index:10;}
+	
+	#navToggler {/*display:none;*/ display: block; width: 100%; position: absolute; left:0; margin: 5px 0; background: none; border: none; box-shadow: none;}
+	
+	#default-main-header, #default-main-header .navbar, #default-main-header .navbar li, #default-main-header .navbar li a { height:auto;}
+
+	#default-main-header #topNav {margin-left:0; margin-top:-10px; z-index:6;}
+	
+	#default-main-header #topNav li, #default-main-header #topNav li a { float:none; height:auto;}
+	
+	
+	#country-menu #brand {height: 90px;width: 90px; margin:auto; margin-top:0; display:block; position:static;}
+	#country-menu .row	{height:140px;}
+	#where-are-you-from-additional-link a {font-family:'MetaWebPro-BlackIta', sans-serif; color:#fff; font-size:16px; line-height:20px; margin-top:16px; display:block;}
+	
+	#country-list {bottom: 25px; left: 120px;}
+	#myIssueLink {display:none;}
+
+}

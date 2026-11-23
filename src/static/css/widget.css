@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+	.widget-wrapper {border:1px solid #cccccc; background:#fff; position:relative; overflow:hidden;
+	-webkit-box-shadow: 2px 2px 0px rgba(0,0,0,.1); -moz-box-shadow: 2px 2px 0px rgba(0,0,0,.1); box-shadow: 2px 2px 0px rgba(0,0,0,.1);
+}
+	.single-widget {background:#fff; min-height:385px; margin:9px 6px; padding-bottom:37px; position:relative;}
+		.single-widget header {border-bottom:1px solid #ccc;}
+
+	.single-widget footer {position:absolute; left:0; bottom:0; width:100%; height:36px; line-height:36px;  border-top:1px solid #ccc;
+		font-family: 'MetaWebPro-Book', sans-serif!important; text-transform: uppercase; color: #1b1b1b; font-size: 12px; font-weight: bolder;	
+	}
+	
+	.single-widget footer .row {padding:0 8px; font-family:'MetaWebPro-Book', sans-serif;}
+	
+	
+	.widget-content {border-bottom:1px solid #ccc; padding:12px 0; margin-bottom:12px; font-family:'MetaWebPro-Book', sans-serif; color:#000; font-size:12px; line-height:18px;}
+	
+	
+	
+	.widget-meta li {margin-bottom:0; margin-top:0; line-height:18px;}
+	.widget-meta li.append-bottom {margin-bottom:16px;}
+	
+	.widget-meta li span {font-size:12px; font-family:'MetaWebPro-Book', sans-serif; color:#000;}
+	.widget-meta li strong {font-size:12px; font-family:'MetaWebPro-BlackIta', sans-serif;}
+	
+	
+	.do-like, .do-dislike { display:inline-block; width:12px; overflow:hidden; height: 13px; vertical-align: middle; text-decoration:none;}
+	
+	.do-like span, .do-dislike span { visibility:hidden;}
+		
+	.do-like {background:url(../images/btn-like-icon.png) center no-repeat;}
+	.do-dislike {background:url(../images/btn-dislike-icon.png) center no-repeat;}
+	
+	.likes-num, .dislikes-num {color:#526060; font-weight:normal;}
+
+
+	.widget-media {height:155px;}
+	
+	.widget-media a {display:block; height:100%;}
+	
+	.widget-no-media {background:#eee;}
+	
+	.widget-title {font-family:'MetaWebPro-BlackIta', sans-serif; font-size:16px; line-height:66px; margin:0;}
+		.widget-title a {color:#000; white-space:nowrap; position:relative; display:block; overflow:hidden; text-overflow: ellipsis;}
+	
+	.edit-overlay {
+		background: rgba(0,0,0,.9); width: 100%; height: 100%; z-index: 1; top: -10px; left: -10px; position: absolute; padding: 20px; box-sizing: content-box; -moz-box-sizing: content-box; display:none; opacity:0;
+		transition:opacity 0.25s ease; -webkit-transition:opacity 0.25s ease; -moz-transition:opacity 0.25s ease; -o-transition:opacity 0.25s ease; 
+	
+	}
+	
+	#my-issues .widget-wrapper:hover {border:none; box-shadow: none;}
+	.widget-wrapper:hover .edit-overlay {display:block; opacity:1;}
+	
+	.edit-overlay nav ul {margin-top:-19px;}
+	.edit-overlay li {margin-bottom:0!important; padding-bottom:0;}
+	.edit-overlay a {color: #fff;font-size: 16px;line-height: 44px;border-bottom: 1px solid #fff;display: block;position: relative;left: -16px;padding: 0 7px;box-sizing: content-box; -moz-box-sizing: content-box; width: 100%;}	
+	.edit-overlay a img {vertical-align:middle;position: relative; top: 0px; margin-right: 8px;}
+	
+	.edit-overlay .topic-edit-link a img { top:-5px;}
+	.edit-overlay .topic-delete-link a img { top:-2px;}
+	
+	
+	.edit-overlay a:hover {background:#ea6747;}
+	
+	
+@media only screen and (max-width: 768px) {
+	.widget-wrapper {margin:10px!important; margin-bottom:20px!important;}
+}
+
+@media only screen and (max-width: 1500px) {
+
+}
+	
+@media only screen and (max-width: 768px) { 
+
+
+}

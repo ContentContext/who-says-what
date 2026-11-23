@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#lyv-loginbox {position:fixed; top:0; left:0; width:100%; height:0;  z-index:100; overflow:hidden;  }
+
+.loginbox #lyv-loginbox {display:block; height:100%; transition:opacity 0.25s ease; }
+
+	#lyv-loginbox #lyv-loginbox-background {position:fixed; top:0; left:0; width:100%; height:0; background:url(../images/lyv-75-black.png) repeat; opacity:0; -webkit-transition:opacity 0.25s ease; -moz-transition:opacity 0.25s ease; -o-transition:opacity 0.25s ease; cursor:pointer;}
+
+	#lyv-loginbox #lyv-loginbox-background:hover {cursor:pointer;}
+	
+		.loginbox #lyv-loginbox #lyv-loginbox-background {opacity:1; height:100%;}
+		
+	
+	#lyv-loginbox-wrapper {margin-top:-670px;}		
+		.loginbox #lyv-loginbox-wrapper {margin-top:170px;}
+	
+	#lyv-loginbox-wrapper header {padding:18px;}
+	#lyv-loginbox-wrapper header h2 { font-size:23px; text-align:center; margin:0; padding:0;}
+	#lyv-loginbox-wrapper .columns {}
+	
+	#lyv-loginbox-wrapper footer {color:#869299; font-size:14px; margin-top:24px; padding-bottom:24px;}
+	
+	
+	#loginbox-body { margin-top:36px; min-height:250px;}
+		#loginbox-body h3 {font-size:22px; margin-bottom:20px;}
+		#loginbox-body p {font-size:14px; color:#000;}
+		#loginbox-body .columns {padding:0 30px;}
+		#loginbox-body form {margin-bottom:0;}
+		
+		#loginbox-body .input {height:40px; border:none; }
+		
+		#login-btn, #register-btn, #fb-register-btn {width:100%; text-align:center; height:40px;}
+		#login-btn button, #register-btn button, #fb-register-btn a {width:100%; text-align:center; line-height:44px;}
+		
+		#loginbox-body {}
+
+	.lyv-lightbox-hdivisor {margin:0; padding:0; border:0; height:19px; background:url(../images/loginbox-hdivisor.png) center no-repeat; margin:20px 0;}
+	
+
+@media only screen and (max-width: 1500px) {
+
+}
+	
+@media only screen and (max-width: 1200px) { 
+		.loginbox #lyv-loginbox-wrapper { width:100%; margin:auto; position:absolute; margin-top:20px;}
+
+}
+@media only screen and (max-width: 768px) { 
+	#lyv-signin-box, #lyv-register-box {margin-top:24px;}
+}

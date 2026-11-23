@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.happyWrapper {width: 800px; margin: auto; text-align: center;}
+
+#happyvoting { margin-top: 74px;}
+
+#happyvoting header h1 {font-size: 70px; text-transform: uppercase; font-weight: normal; margin: 0!important; margin-bottom: 6px!important; color: #000; cursor:default; padding: 0;}
+#happyvoting header h2 {font-size: 30px; font-weight: normal; margin: 0; margin-bottom: 32px;  color: #000; cursor:default;}
+
+#happyvoting #main-wrapper {position: relative;}
+#happyvoting #main-wrapper #social-media-icons { right:-110px; top:0;}
+
+#happyvoting footer {padding:24px 0; font-family: 'MetaWebPro-BlackIta', sans-serif; font-size: 22px;}
+#happyvoting footer, #happyvoting footer a {color:#000; text-decoration: none;}
+#happyvoting footer a:hover {border-bottom: 3px solid #000;}
+
+#happyvoting footer a.first-link {margin-right: 15px;}
+#happyvoting footer a.last-link {margin-left: 12px;}
+
+#happyvoting-popup {display: none;}
+.happyvoting-popup-open #happyvoting-popup {position: fixed;top: 0;left: 0;width: 100%;height: 100%; background: rgba(229,203, 31,.8); z-index: 10; display: block;}
+.happyvoting-popup-open #happyvoting-popup .full{ position: absolute; width: 100%; height: 100%; top:0; left:0;}
+
+.happyvoting-popup-open #happyvoting-popup .close { font-size: 20px; position: absolute; top:10px; right: 10px; text-decoration: none; font-family: 'MetaWebPro-BlackIta', sans-serif; color:#000; }
+

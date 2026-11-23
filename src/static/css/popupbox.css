@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+#lyv-popupbox {position:fixed; top:0; left:0; width:100%; height:0;  z-index:100; overflow:hidden;  }
+
+.popupbox #lyv-popupbox {display:block; height:100%; transition:opacity 0.25s ease; }
+
+	#lyv-popupbox #lyv-popupbox-background {position:fixed; top:0; left:0; width:100%; height:0; background:url(../images/lyv-75-black.png) repeat; opacity:0; -webkit-transition:opacity 0.25s ease; -moz-transition:opacity 0.25s ease; -o-transition:opacity 0.25s ease; cursor:pointer;}
+
+	#lyv-popupbox #lyv-popupbox-background:hover {cursor:pointer;}
+	
+		.popupbox #lyv-popupbox #lyv-popupbox-background {opacity:1; height:100%;}
+		
+	
+	#lyv-popupbox-wrapper {margin-top:-670px;}		
+		.popupbox #lyv-popupbox-wrapper {margin-top:70px;}
+	
+	#lyv-popupbox-wrapper header {padding:18px;}
+	#lyv-popupbox-wrapper header h2 { font-size:23px; text-align:center; margin:0; padding:0;}
+	#lyv-popupbox-wrapper .columns {}
+	
+	#lyv-popupbox-wrapper footer {color:#869299; font-size:14px; padding-bottom:6px;}
+	#lyv-popupbox-wrapper .close-popup {font-size:18px; text-transform:uppercase;}
+	
+	
+	#popupbox-body { margin-top:0; min-height:250px;}
+		#popupbox-body h3 {font-size:22px; margin-bottom:20px;}
+		#popupbox-body p {font-size:14px; color:#000;}
+		#popupbox-body .columns {padding:0 30px;}
+		#popupbox-body form {margin-bottom:0;}
+		
+		#popupbox-body .input {height:40px; border:none; }
+		
+		#login-btn, #register-btn, #fb-register-btn {width:100%; text-align:center; height:40px;}
+		#login-btn button, #register-btn button, #fb-register-btn a {width:100%; text-align:center; line-height:44px;}
+		
+		#popupbox-body {}
+
+	.lyv-lightbox-hdivisor {margin:0; padding:0; border:0; height:19px; background:url(../images/popupbox-hdivisor.png) center no-repeat; margin:20px 0;}
+	
+
+@media only screen and (max-width: 1500px) {
+
+}
+	
+@media only screen and (max-width: 1200px) { 
+		.popupbox #lyv-popupbox-wrapper { width:100%; margin:auto; position:absolute; margin-top:20px;}
+
+}
+@media only screen and (max-width: 768px) { 
+	#lyv-signin-box, #lyv-register-box {margin-top:24px;}
+}

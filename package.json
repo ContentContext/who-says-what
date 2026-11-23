@@ -1,0 +1,13 @@
+{
+  "name": "who-says-what",
+  "private": true,
+  "description": "Static rebuild of the League of Young Voters' \"Youth issues: Who says what?\" tool (2014).",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "serve": "node scripts/build.mjs && cd dist && python3 -m http.server 8000",
+    "e2e": "python3 tests/e2e.py"
+  },
+  "engines": { "node": ">=20" }
+}

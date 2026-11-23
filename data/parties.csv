@@ -1,0 +1,7 @@
+party_id,party_market_code,party_name,party_abbreviation,notes
+9001,eu,Sample European Party A,SEPA,SAMPLE ROW - replace with a real European political party
+9002,eu,Sample European Party B,SEPB,SAMPLE ROW - replace with a real European political party
+9101,it,Partito di Esempio,PDE,SAMPLE ROW - shows a statement translated from Italian
+9102,it,Sample Party Italy B,SPIB,SAMPLE ROW
+9201,de,Beispielpartei,BSP,SAMPLE ROW - shows a statement translated from German
+9301,ie,Sample Party Ireland,SPI,SAMPLE ROW - an English-language manifesto (no original text)

@@ -1,0 +1,14 @@
+party_id,category_id,comparison_text,comparison_text_original,source_title,source_url,notes
+9001,1,"[Sample] Placeholder statement on education. Replace this with the excerpt from the party's manifesto for the 2014 European Parliament elections.",,Sample manifesto 2014,,SAMPLE ROW
+9001,2,"[Sample] Placeholder statement on employment. Excerpts can contain <em>basic</em> formatting and more than one sentence.",,Sample manifesto 2014,,SAMPLE ROW
+9001,5,"[Sample] Placeholder statement on the future of Europe.",,Sample manifesto 2014,,SAMPLE ROW
+9002,1,"[Sample] Placeholder statement on education.",,Sample manifesto 2014,,SAMPLE ROW
+9002,2,"[Sample] Placeholder statement on employment.",,Sample manifesto 2014,,SAMPLE ROW
+9002,7,"[Sample] Placeholder statement on the environment.",,Sample manifesto 2014,,SAMPLE ROW
+9101,2,"[Sample] English translation of an Italian manifesto excerpt on employment.","[Esempio] Testo originale del programma elettorale sul lavoro.",Programma di esempio 2014,,SAMPLE ROW
+9101,6,"[Sample] English translation of an Italian manifesto excerpt on investment in youth.","[Esempio] Testo originale del programma sugli investimenti nei giovani.",Programma di esempio 2014,,SAMPLE ROW
+9102,2,"[Sample] Placeholder statement on employment.",,Sample manifesto 2014,,SAMPLE ROW
+9201,2,"[Sample] English translation of a German manifesto excerpt on employment.","[Beispiel] Originaltext aus dem Wahlprogramm zum Thema Beschäftigung.",Beispielprogramm 2014,,SAMPLE ROW
+9201,3,"[Sample] English translation of a German manifesto excerpt on the digital revolution.","[Beispiel] Originaltext aus dem Wahlprogramm zur digitalen Revolution.",Beispielprogramm 2014,,SAMPLE ROW
+9301,2,"[Sample] Placeholder statement on employment.",,Sample manifesto 2014,,SAMPLE ROW
+9301,4,"[Sample] Placeholder statement on political participation.",,Sample manifesto 2014,,SAMPLE ROW

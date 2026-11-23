@@ -1,0 +1,49 @@
+   	<div id="form-section-body-results" data-ng-controller="resultsController" class="fadeInAtStart">
+		<div class="relative">
+    		<h3 class="append-bottom" id="search-results-title">Your search results</h3>
+	    	<a href="#/" data-ng-click="initSelectedValues();" id="new-search-btn">Start a new search!</a>
+		</div>
+       <div data-ng-repeat="type in partiesTypes">
+		<div class="single-issue-results" data-ng-repeat="(issue_name, countries) in results[type]">
+         
+           <div class="single-country-results" data-ng-repeat="(country_code, parties) in countries">
+
+			   <h3 class="european-political-parties-heading" data-ng-if="type=='european'" data-ng-hide="!results.european">European Political Parties</h3>
+			   <h3 class="orange-and-bold single-issue-title">{{ issue_name }}</h3>
+           
+			   <div class="results-flag">
+			   	
+			   	<h3 class="single-country-title" data-ng-if="type!='european'">{{ country_codes[country_code].country_name }}</h3></div>
+				<div class="row">   
+				 
+					 <div class="four columns single-party" data-ng-repeat="(party_name, result) in parties" data-ng-class="{'first-column':$index %3==0}">
+				        <div class="party-logo"><img data-ng-src="{{ configs.staticUrl }}/parties/{{ result[0].party_market_code }}/{{result[0].party_id}}.jpg" title="{{party_name}}" /></div>
+						<div data-ng-repeat="entry in result">
+						<p class="entry-text" data-ng-show="entry.comparison_text">
+							<span data-ng-bind-html="entry.comparison_text">{{entry.comparison_text}}</span> 
+						</p>
+						<p class="entry-original-text" data-ng-show="entry.comparison_text_original">
+							<span data-ng-bind-html="entry.comparison_text_original">{{ entry.comparison_text_original }}</span>
+						</p>
+						</div>
+					</div>	
+								
+				</div>
+				
+           </div>
+             
+        </div>
+	   
+       </div>
+    </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+

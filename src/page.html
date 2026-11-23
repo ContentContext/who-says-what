@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html class="no-js locale-en_GB" lang="en">
+  <!-- HEADER -->
+    <head>
+        <meta charset="utf-8">
+        <title>Youth issues: Who says what? · League of Young Voters</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="A non-partisan tool that compares what national and European political parties promised young people in their manifestos for the 2014 European elections.">
+        <meta property="og:url" content="{{SITE_URL}}">
+        <meta property="og:title" content="Youth issues: Who says what?">
+        <meta property="og:site_name" content="League of Young Voters">
+        <meta property="og:description" content="Compare what political parties promised young people for the 2014 European elections.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{{SITE_URL}}images/comparison-tool/logo-wsw.png">
+        <meta property="og:locale" content="en_GB">
+        <link rel="shortcut icon" href="{{BASE}}ct-favicon.ico" />
+        <link rel="preload" href="{{BASE}}fonts/fira-sans-latin-900-italic.woff2" as="font" type="font/woff2" crossorigin>
+        <!-- GUMBY FRAMEWORK  CSS -->
+        <link rel="stylesheet" type="text/css" href="{{BASE}}lib/gumby/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="{{BASE}}css/lyv-webfonts.css" />
+        <!-- jQuery UI CSS -->
+        <link href="{{BASE}}lib/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" type="text/css" />
+        <!-- AnythingSlider CSS -->
+        <link href="{{BASE}}lib/anythingSlider/anythingslider.css" rel="stylesheet" type="text/css" />
+        <!-- Custom  CSS -->
+        <link rel="stylesheet" type="text/css" href="{{BASE}}css/site.css" />
+        <!-- Custom LoginBox  CSS -->
+        <link rel="stylesheet" type="text/css" href="{{BASE}}css/loginbox.css" />
+        <link rel="stylesheet" type="text/css" href="{{BASE}}css/popupbox.css" />
+        <!-- Boards  CSS -->
+        <link rel="stylesheet" type="text/css" href="{{BASE}}css/boardsElements.css" />
+        <link rel="stylesheet" type="text/css" href="{{BASE}}css/comparison-tool.css" />
+        <link href="{{BASE}}css/locales.css" rel="stylesheet" type="text/css">
+        <script>window.WSW_BASE = "{{BASE}}"; window.WSW_DATA_VERSION = "{{DATA_VERSION}}";</script>
+    </head>
+  <!-- END OF HEADER -->
+    <body class="comparison-home-page market-european-actions  ng-cloack" data-ng-class="{'mobile-version':mobile==true}">
+	    <div id="fixedBox">
+	    	<div class="inner">
+			    <div id="default-main-header">
+			        <div class="navbar pretty" id="nav" data-ng-controller="navController">
+  	<div class="row relative">
+        <div id="ct-nav-main" class="push_three nine columns">
+		    <div id="nav-lyv">
+		    	<a href="{{BASE}}">
+		    		<img src="{{BASE}}images/comparison-tool/logo-wsw.png" alt="Youth issues: Who says what?" />
+		    	</a>
+		    </div>
+			<ul id="ct-topNav" class="desktop-only">
+				<li class="" data-ng-repeat="(index, item) in menu" data-ng-class="{'first-item':index==0}">
+				    <a href="{{ item.href }}" data-ng-class="{'current_page':currentPage==item.href}"><span>{{ item.label }}</span></a>
+				</li>
+			</ul>
+	         <div id="social-media-icons-comparison">
+				<ul>
+					<li><a href="https://www.facebook.com/youngvoters.eu" id="sp-social-fb" class="sp-social-link" target="_blank" rel="noopener"
+					title="League of the young voters is on Facebook">f<span class="hidden">acebook</span></a></li>
+					<li><a href="https://twitter.com/youngvotersEU" id="sp-social-tw" class="sp-social-link" target="_blank" rel="noopener"
+					title="League of the young voters is on Twitter">t<span class="hidden">witter</span></a></li>
+				</ul>
+			</div>
+        </div>
+        <div class="mobile-only align-center">
+        	Navigation Menu
+            <select id="mobileTopNavigation" class="select-nav" aria-label="Navigation menu">
+                <option value="{{BASE}}#/">Homepage</option>
+                <option value="{{BASE}}#/about-this-tool">About this tool</option>
+                <option value="{{BASE}}#/learn-more">Learn more</option>
+                <option value="{{ARCHIVE}}http://www.youngvoters.eu/">League of Young Voters (archived)</option>
+            </select>
+		</div>
+	</div>
+</div>			    </div>
+	    	</div>
+    	</div>
+	        <div id="ng-view" data-ng-view data-ng-controller="pageViewController"></div>
+<hr class="divider" />
+<footer id="ct-footer">
+  <div id="main-footer" class="row">
+    <div class="push_three two columns">
+    <a id="footer-lyv-tag" href="{{BASE}}" aria-label="League of Young Voters"></a>
+    <ul>
+		<li><a href="{{BASE}}#/about-this-tool">about this tool</a> </li>
+		<li class="append-bottom"><a href="{{BASE}}#/learn-more">learn more</a> </li>
+		<li><a href="{{ARCHIVE}}http://www.youngvoters.eu/" title="Archived copy of youngvoters.eu">start a topic</a></li>
+		<li class="append-bottom"><a href="{{ARCHIVE}}http://www.youngvoters.eu/join" title="Archived copy of youngvoters.eu">join the league</a></li>
+		<li><a href="https://twitter.com/youngvotersEU" rel="noopener">twitter</a></li>
+		<li><a href="https://www.facebook.com/youngvoters.eu" rel="noopener">facebook</a></li>
+      </ul>
+    </div>
+    <div id="footer-sponsor-list" class="seven columns align-right">
+       <a href="{{ARCHIVE}}http://www.youngvoters.eu/" title="Archived copy of youngvoters.eu"><img src="{{BASE}}images/logo/logo-eu.png" alt="League of Young Voters in Europe" /> </a>
+  	   <div id="ct-footer-in-cooperation-with">
+  	   	<span>in cooperation with</span>
+  	   </div>
+       <a href="http://home.kieskompas.nl/en/" target="_blank" rel="noopener"><img src="{{BASE}}images/comparison-tool/kies_compass_logo.png" alt="Kieskompas" /> </a>
+    </div>
+  </div>
+  <div id="footer-sponsors">
+    <div class="row">
+      <div id="sponsor-links">
+      </div>
+  </div>
+  <div id="footer-credits">
+    <div class="row">
+      <div class="push_two five columns"> <span id="brando">
+      	<a href="{{ARCHIVE}}http://www.makeyourchoice.eu/" target="_blank" rel="noopener" title="Archived copy of makeyourchoice.eu"><img src="{{BASE}}images/comparison-tool/footer-brando.png" alt="Make your choice" /></a>
+      </span> </div>
+      <div class="five columns align-right regular-font">
+      <div id="footer-copyright-info">
+      <p>&copy; 2014 league of the young voters europe <a href="{{ARCHIVE}}http://www.youngvoters.eu/eu/privacy" title="Archived copy of the original privacy policy">privacy policy</a></p>
+      </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="loadOverlayWrapper">
+  <div id="loadOverlay" class="animate-250"></div>
+</div>
+
+    <!-- Modernizr 2.6.2 -->
+    <script src="{{BASE}}lib/js/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery 1.8.3 -->
+    <script src="{{BASE}}lib/js/jquery-1.8.3.min.js"></script>
+    <!-- Angular 1.2.16 -->
+    <script src="{{BASE}}lib/js/angular/angular.min.js"></script>
+    <script src="{{BASE}}lib/js/angular/angular-route.min.js"></script>
+    <script src="{{BASE}}lib/js/angular/angular-sanitize.min.js"></script>
+    <!-- Gumby -->
+    <script src="{{BASE}}lib/js/gumby/gumby.min.js"></script>
+    <script src="{{BASE}}lib/js/gumby/gumby.init.js"></script>
+    <!-- SITE JS -->
+    <script src="{{BASE}}js/site.js"></script>
+    <script src="{{BASE}}js/comparison-tool.min.js"></script>
+    <!-- Local data in place of the api2.youngvoters.eu API -->
+    <script src="{{BASE}}js/wsw-api.js"></script>
+    </body>
+</html>

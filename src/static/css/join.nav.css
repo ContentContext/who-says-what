@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+#join-menu {
+	margin-top: 150px;
+	margin-bottom: 20px;}
+
+#join-menu a {
+	color:#000;
+	text-decoration: none;}
+			
+#join-menu li {
+	color: #000;
+	text-decoration: none;
+    float:left;
+	border-right: 1px solid;
+	line-height: 14px;
+	height: 14px;
+	padding: 0 10px;}
+
+#join-menu li.last {
+	border-right: none;
+	border:none;}
+
+.join-page #standard-page-wrapper,
+.join-team-page #standard-page-wrapper,
+.join-calendar-page #standard-page-wrapper,
+.join-downloads-page #standard-page-wrapper {
+	margin-top: 0!important;}
+
+#join-menu .active {border-bottom: 1px solid;}
+	
+@media only screen and (max-width: 1500px) {
+
+}
+	
+@media only screen and (max-width: 768px) { 
+
+}
+
+

@@ -1,0 +1,80 @@
+﻿/* MetaWebPro-BlackIta */
+/* first for IE 4–8 */
+@font-face {
+	font-family: MetaWebPro-BlackIta;
+	src: url("../fonts/MetaWebPro-BlackIta.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+	font-family: MetaWebPro-BlackIta;
+	src: local('?'), 
+		 url("../fonts/MetaWebPro-BlackIta.woff") format("woff"),
+		 url("../fonts/MetaCompPro-BlackIta.ttf") format("truetype");
+}
+
+/* MetaScWebPro-BlackIta */
+/* first for IE 4–8 */
+@font-face {
+  font-family: MetaScWebPro-BlackIta;
+  src: url("../fonts/MetaScWebPro-BlackIta.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: MetaScWebPro-BlackIta;
+  src: url("../fonts/MetaScWebPro-BlackIta.woff") format("woff");
+}
+
+
+/* MetaWebPro-Book */
+/* first for IE 4–8 */
+@font-face {
+  font-family: MetaWebPro-Book;
+  src: url("../fonts/MetaWebPro-Book.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: MetaWebPro-Book;
+  src: url("../fonts/MetaWebPro-Book.woff") format("woff");
+}
+
+/* MetaScWebPro-Book */
+/* first for IE 4–8 */
+@font-face {
+  font-family: MetaScWebPro-Book;
+  src: url("../fonts/MetaScWebPro-Book.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: MetaScWebPro-Book;
+  src: url("../fonts/MetaScWebPro-Book.woff") format("woff");
+}
+
+/* MetaWebPro-BookIta */
+/* first for IE 4–8 */
+@font-face {
+  font-family: MetaWebPro-BookIta;
+  src: url("../fonts/MetaWebPro-BookIta.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: MetaWebPro-BookIta;
+  src: url("../fonts/MetaWebPro-BookIta.woff") format("woff");
+}
+
+/* MetaScWebPro-BookIta */
+/* first for IE 4–8 */
+@font-face {
+  font-family: MetaScWebPro-BookIta;
+  src: url("../fonts/MetaScWebPro-BookIta.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: MetaScWebPro-BookIta;
+  src: url("../fonts/MetaScWebPro-BookIta.woff") format("woff");
+}

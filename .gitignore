@@ -1,0 +1,5 @@
+dist/
+node_modules/
+.DS_Store
+# Licensed FF Meta font files must not be committed (see docs/design.md)
+src/static/fonts/Meta*

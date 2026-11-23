@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" class="old-ie-browser ie-browser">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" class="old-ie-browser ie-browser">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" class="old-ie-browser ie-browser">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9" class="ie-browser">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) | !(IE 9) ]><!-->
+<html class="no-js locale-en_GB">
+<!--<![endif]-->
+
+  <!-- HEADER -->
+    <head>
+        <title>
+        	League of Young Voters
+        </title>
+        
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8">
+        
+        <meta property="fb:admins" content="100000467748892">
+        <meta property="fb:app_id" content="177523565743324">
+        <meta property="og:url" content="http://www.youngvoters.eu/whosayswhat">
+        <meta property="og:title" content="League of Young Voters">
+        <meta property="og:site_name" content="League of the Young Voters">
+        <meta property="og:description" content="Choose a topic for Europe. What politicians should focus on? Make your choice!">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="http://www.youngvoters.eu/images/logo/logo-lyv-social.png">
+        <meta property="og:locale" content="en_GB">
+
+        <link rel="shortcut icon"  href="http://www.youngvoters.eu/ct-favicon.ico" />
+		<link id="site-api" type="text/json" href="http://api.youngvoters.eu" data-api-key="c0a5db3eee30b463b87797d1faa034d5" />         
+
+        
+        <!-- GUMBY FRAMEWORK  CSS -->
+        <link rel="stylesheet" type="text/css" href="http://static.youngvoters.eu/css/gumby/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="http://www.youngvoters.eu/css/lyv-webfonts.css" />
+
+        <!-- jQuery UI CSS -->	
+        <link href="http://static.youngvoters.eu/css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" type="text/css" />        
+
+        <!-- AnythingSlider CSS -->	
+        <link href="http://static.youngvoters.eu/css/anythingSlider/anythingslider.css" rel="stylesheet" type="text/css" />        
+
+
+        <!-- Custom  CSS -->
+        <link rel="stylesheet" type="text/css" href="http://www.youngvoters.eu/css/site.css" />
+
+        <!-- Custom LoginBox  CSS -->
+        <link rel="stylesheet" type="text/css" href="http://www.youngvoters.eu/css/loginbox.css" />
+        <link rel="stylesheet" type="text/css" href="http://www.youngvoters.eu/css/popupbox.css" />
+
+        <!-- Boards  CSS -->
+        <link rel="stylesheet" type="text/css" href="http://www.youngvoters.eu/css/boardsElements.css" />
+
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+                     
+        
+        
+        <link rel="stylesheet" type="text/css" href="http://www.youngvoters.eu/css/comparison-tool.css" />
+
+
+         
+         
+
+        <link href="http://www.youngvoters.eu/css/locales.css" rel="stylesheet" type="text/css">
+        
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <link rel="stylesheet" type="text/css" href="http://www.youngvoters.eu/css/ie.css" />
+        <![endif]-->
+        
+    </head>
+  <!-- END OF HEADER -->
+
+    <body class="comparison-home-page market-european-actions  ng-cloack" data-ng-class="{'mobile-version':mobile==true}">
+                
+        <div id="fb-root"></div>
+        
+        <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=177523565743324";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
+        
+         	    <div id="fixedBox">
+	    	<div class="inner">
+	    
+			    <div id="default-main-header">    
+			        <div class="navbar pretty" id="nav" data-ng-controller="navController">
+  	<div class="row relative">
+  	
+        <div id="ct-nav-main" class="push_three nine columns">
+        
+		    <div id="nav-lyv">
+		    	<a href="/whosayswhat/">
+		    		<img src="http://www.youngvoters.eu/images/comparison-tool/logo-wsw.png" />
+		    	</a>
+		    </div>
+        
+			<ul id="ct-topNav" class="desktop-only">
+			
+			
+				<li class="" data-ng-repeat="(index, item) in menu" data-ng-class="{'first-item':index==0}">
+				    <a href="{{ item.href }}" data-ng-class="{'current_page':currentPage==item.href}"><span>{{ item.label }}</span></a>
+				</li>
+			
+			
+			</ul>
+        
+	         <div id="social-media-icons-comparison">
+				<ul>
+					<li><a href="https://www.facebook.com/youngvoters.eu" id="sp-social-fb" class="sp-social-link" target="_blank" 
+					title="League of the young voters is on Facebook">f<span class="hidden">acebook</span></a></li>
+					<li><a href="https://twitter.com/youngvotersEU" id="sp-social-tw" class="sp-social-link" target="_blank" 
+					title="League of the young voters is on Twitter">t<span class="hidden">witter</span></a></li>
+				</ul>
+			</div>
+        </div>
+        
+        <div class="mobile-only align-center">
+        	Navigation Menu 
+            <select id="mobileTopNavigation" class="select-nav">
+                <option value="/european-actions/" >Homepage</option>
+                <option value="/european-actions/about" >About</option>
+                <option value="/european-actions/join" >Join the league</option>
+			            
+            				<option value="/european-actions/signin">Start a topic	</option>
+			                <option value="http://www.youngvoters.eu/european-actions?jumpAtBoard" >European actions</option>
+                <option value="/european-actions/boards" >Where are you from</option>
+                 
+                
+                                <option value="/european-actions/signin">Log in</option>
+                                    
+            </select>
+            
+              
+		</div>
+        
+	</div>
+    
+    
+</div>			    </div>
+			    
+	    	</div>
+    	</div>
+    
+
+	        <div id="ng-view" data-ng-view data-ng-controller="pageViewController"></div>        
+<hr class="divider" />
+<footer id="ct-footer">
+  <div id="main-footer" class="row">
+    <div class="push_three two columns">
+    <a id="footer-lyv-tag" href="#"></a>
+    <ul>
+		<li><a href="/whosayswhat/#/about-this-tool">about this tool</a> </li>
+		<li class="append-bottom"><a href="/whosayswhat/#/learn-more">learn more</a> </li>
+		<li><a href="http://www.youngvoters.eu">start a topic</a></li>
+		<li class="append-bottom"><a href="http://www.youngvoters.eu/join">join the league</a></li>
+		<li><a href="https://twitter.com/youngvotersEU">twitter</a></li>
+		<li><a href="http://www.facebook.com/youngvoters.eu">facebook</a></li>
+      </ul>
+    </div>
+    <div id="footer-sponsor-list" class="seven columns align-right">
+       <a href="http://www.youngvoters.eu"><img src="http://www.youngvoters.eu/images/logo/logo-eu.png" /> </a>
+  	   
+  	   <div id="ct-footer-in-cooperation-with">
+  	   	<span>in cooperation with</span>
+  	   </div>
+  	   
+       <a href="http://home.kieskompas.nl/en/" target="_blank"><img src="http://www.youngvoters.eu/images/comparison-tool/kies_compass_logo.png" /> </a>
+    </div>
+    
+  </div>
+  <div id="footer-sponsors">
+    <div class="row">
+      <div id="sponsor-links">
+        
+        
+      </div>
+  </div>
+  <div id="footer-credits">
+    <div class="row">
+      <div class="push_two five columns"> <span id="brando"> 
+      	<a href="http://www.makeyourchoice.eu" target="_blank"><img src="http://www.youngvoters.eu/images/comparison-tool/footer-brando.png" /></a>
+      </span> </div>
+      <div class="five columns align-right regular-font">
+      <div id="footer-copyright-info"> 
+      <p>&copy; 2014 league of the young voters europe <a href="http://www.youngvoters.eu/eu/privacy">privacy policy</a></p>
+      
+      </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="loadOverlayWrapper">
+  <div id="loadOverlay" class="animate-250"></div>
+</div>        <div id="lyv-loginbox" class="">
+    <a id="lyv-loginbox-background"></a>
+    <div id="lyv-loginbox-wrapper" class="animate-500">
+    
+        <div class="row lyv-loginbox-wrapper-row">
+        	<div class="centered eight columns bg-light-blue rounded-border-3">
+               
+                <header class="bg-orange">
+                    <h2 class="black-font text-white">
+                        Log in or register to enter LYV!                    </h2>
+                </header>
+                <hr class="divider" />
+                
+                <div id="loginbox-body" class="row">
+                
+                
+                	<div id="lyv-signin-box" class="six columns">
+                    
+                    	<h3 class="black-font text-orange uppercase">Login</h3>
+						
+                        <form method="post" action="/european-actions/signin" data-validate="true">
+                            <input type="hidden" name="login" value="1" />
+                            <input type="hidden" name="returnurl" value="http://www.youngvoters.eu/whosayswhat" />
+                            <div class="field">
+                                <input type="text" name="form_user_email" class="text input regular-font required" placeholder="Email address" />
+                            </div>
+
+                            <div class="field">
+                                <input type="password" class="password input regular-font required" name="form_user_password" placeholder="Password" />
+                            </div>
+                            <div id="login-btn" class="btn medium bg-green rounded-border-3">
+                                <button type="submit" class="black-font txt-white">Login</button>
+                            </div>
+                        
+                        </form>
+                        
+                        
+                        <hr class="lyv-lightbox-hdivisor"/>
+                        
+                        <div id="fb-register-btn" class="btn medium bg-blue rounded-border-3 black-font">
+                        	<a href="https://www.facebook.com/dialog/oauth?client_id=177523565743324&redirect_uri=http%3A%2F%2Fwww.youngvoters.eu%2Feuropean-actions%2Fsignin%3Freturnurl%3D%252Fwhosayswhat&state=2faff7005abe4f8ae468e3f78cb9fbcc&scope=publish_stream%2C+user_birthday%2C+email">Login via Facebook</a>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                	<div id="lyv-register-box" class="six columns">
+                    	<h3 class="black-font text-orange uppercase">Register</h3>
+                        
+                        <form method="post" action="/european-actions/signup/do" data-validate="true">
+                        	
+                            <div class="field">
+                                <input type="text" class="text input regular-font required" placeholder="First name" name="form_user_firstname" />
+                            </div>
+
+                            <div class="field">
+                                <input type="text" class="text input regular-font required" placeholder="Last name" name="form_user_lastname" />
+                            </div>
+
+
+                            <div class="field">
+                                <input type="text" class="email input regular-font required" placeholder="Email address" name="form_user_email"/>
+                            </div>
+
+                            <div class="field">
+                                <input type="password" class="password input regular-font required" placeholder="Password" minlength="6" name="form_user_password" />
+                            </div>
+                            <div id="login-btn" class="btn medium bg-green rounded-border-3">
+                                <button type="submit" class="black-font txt-white">Join</button>
+                            </div>
+                        
+                        </form>
+                        
+                        
+                    </div>
+                
+                </div>
+                
+                <footer class="regular-font align-center">
+                	By joining, or logging in via Facebook, you accept youngvoters.eu's terms of service and privacy policy.                </footer>
+                
+            </div>
+        
+        </div>
+    
+    </div>
+</div>        		
+        
+<script type="text/javascript">
+var LYV  = {}
+LYV.USER = {}
+LYV.MESSAGES = {}
+
+
+LYV.API_KEY = "c0a5db3eee30b463b87797d1faa034d5";
+LYV.API_URL = "http://api.youngvoters.eu";
+LYV.AREA = "www";
+LYV.DOMAIN = "youngvoters.eu";
+LYV.HOME_URL = "http://www.youngvoters.eu";
+LYV.APP_URL = "http://www.youngvoters.eu";
+LYV.APP_URL = "http://www.youngvoters.eu";
+
+LYV.USER.DISPLAY_NAME = "";
+LYV.USER.FIRST_NAME = "";
+LYV.USER.LAST_NAME = "";
+LYV.USER.TOKEN = "";
+
+
+/*	MESSAGES TO TRANSLATE */
+LYV.MESSAGES.ISSUES_NOT_FOUND	=	'No issues found. Please try another search.'
+
+
+
+</script>
+            <!-- Modernizr 2.6.2 -->
+    <script src="http://static.youngvoters.eu/js/modernizr-2.6.2.min.js"></script>
+
+    <!-- Categorizr -->
+    <script src="http://static.youngvoters.eu/js/categorizr.min.js"></script>
+    
+    <!-- jQuery 1.9.1 -->
+    <script src="http://static.youngvoters.eu/js/jquery-1.8.3.min.js"></script>
+
+    <!-- Angular -->
+    <script src="http://static.youngvoters.eu/js/angular/angular.min.js"></script>
+    <script src="http://static.youngvoters.eu/js/angular/angular-route.min.js"></script>
+    <script src="http://static.youngvoters.eu/js/angular/angular-resource.min.js"></script>
+    <script src="http://static.youngvoters.eu/js/angular/angular-animate.min.js"></script>
+    <script src="http://static.youngvoters.eu/js/angular/angular-sanitize.min.js"></script>
+
+
+    
+    <!-- Gumby -->
+    <script src="http://static.youngvoters.eu/js/gumby/gumby.min.js"></script>
+    <script src="http://static.youngvoters.eu/js/gumby/gumby.init.js"></script>
+    
+    <!-- jQuery UI 1.8.23 -->
+    <script src="http://static.youngvoters.eu/js/jquery-ui-1.8.23.custom.min.js"></script>
+
+    <!-- Backbone -->
+    <script src="http://static.youngvoters.eu/js/underscore-min.js"></script>
+    <script src="http://static.youngvoters.eu/js/backbone-min.js"></script>
+
+    <!-- jQuery tmpl -->
+    <script src="http://static.youngvoters.eu/js/jquery.tmpl.min.js"></script>
+    
+    <!-- jQuery Validate -->
+    <script src="http://static.youngvoters.eu/js/jquery.validate.min.js"></script>
+
+    <!-- AnythingSlider  -->
+    <script src="http://static.youngvoters.eu/js/anythingSlider/jquery.anythingslider.min.js"></script>
+
+    
+    <!-- SITE JS -->
+    <script src="http://www.youngvoters.eu/js/site.js"></script>
+    <script src="http://www.youngvoters.eu/js/comparison-tool.min.js"></script>
+    
+                
+     
+     		
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35648232-2', 'youngvoters.eu');
+  ga('send', 'pageview');
+
+</script>
+
+ 
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<div id="ct-main-body" class="row fadeAndScrollTop" data-ng-controller="homePageController">
+
+
+
+	<div id="ct-sidebar" class="three columns">
+		<div class="row">
+	        <div id="summary" class="fadeInAtStart" data-ng-show="view.name=='results';">
+	
+		        <ul class="menu two columns">
+	
+			        <li class="blue fadeInAtStart" data-ng-hide="selectedValues.issues.length==0 && selectedValues.countries.length==0 && selectedValues.national_parties.length==0 && selectedValues.european_parties.length == 0"><a>Search summary</a></li>
+			        
+			        <li class="orange fadeInAtStart" data-ng-show="selectedValues.issues.length>0"><a class="summary-title">Key Issues </a></li> 
+			        <li class="orange item-menu fadeInAtStart" data-ng-repeat="issue in selectedValues.issues">
+			        	<a class="summary-remove-link" data-ng-click="issue.checked=false; changeFormValue('issues',issue); compare();">
+			        		<img src="/images/comparison-tool/x.png" />
+						</a>
+			        	{{ issue.category_name }}
+			        </li>
+	
+	
+			        <li class="violet fadeInAtStart" data-ng-show="selectedValues.countries.length>0"><a class="summary-title">Countries</a></li>
+			        <li class="violet item-menu fadeInAtStart" data-ng-repeat="country in selectedValues.countries"><a data-ng-click="country.checked=false;"></a>{{ country.country_name }}</li>
+			        
+			        <li class="green fadeInAtStart" data-ng-show="selectedValues.national_parties.length>0"><a class="summary-title">National political parties</a></li>
+			        <li class="green item-menu fadeInAtStart" data-ng-repeat="party in selectedValues.national_parties"><a class="summary-remove-link" data-ng-click="party.checked=false; changeFormValueAndCompare('national_parties',party);"><img src="/images/comparison-tool/x.png" /></a> {{ party.party_name }}</li>
+	
+			        <li class="blue fadeInAtStart" data-ng-show="selectedValues.european_parties.length>0"><a class="summary-title">European political parties</a></li>
+			        <li class="blue item-menu fadeInAtStart" data-ng-repeat="party in selectedValues.european_parties"><a class="summary-remove-link" data-ng-click="party.checked=false; changeFormValueAndCompare('european_parties',party);"><img src="/images/comparison-tool/x.png" /></a> {{ party.party_name }}</li>
+	
+		        </ul>
+	        	   
+	        </div>
+		</div>
+			
+	
+	</div>
+		
+	<div class="columns" data-ng-class="{'seven':currentSlug=='home','nine':currentSlug=='results'}">	
+		<div class="row">
+			<div class="twelve columns">	
+				<div data-ng-include="view.template"></div>
+			</div>
+		</div>
+	</div>
+
+</div>
