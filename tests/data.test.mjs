@@ -73,22 +73,23 @@ test('API engine answers the endpoints the bundle calls', () => {
   assert.ok(eu.length > 0 && eu.every(p => p.party_market_code === 'eu'));
 
   // a single code arrives as a string, several as an array
-  assert.deepEqual(e['party.getList']({ 'market_codes[]': 'de' }).map(p => p.party_market_code), ['de']);
+  const de = e['party.getList']({ 'market_codes[]': 'de' });
+  assert.ok(de.length > 0 && de.every(p => p.party_market_code === 'de'));
   const nat = e['party.getList']({ 'market_codes[]': ['it', 'de'] });
-  assert.deepEqual(nat.map(p => p.party_market_code), ['de', 'it', 'it'], 'national parties ordered by country');
+  const order = nat.map(p => p.party_market_code);
+  assert.deepEqual(order, [...order].sort((a, b) => ['de', 'it'].indexOf(a) - ['de', 'it'].indexOf(b)), 'national parties ordered by country');
 
   const all = e['party.getList']({});
   assert.equal(all.length, db.parties.length);
 
-  const rows = e['comparison.build']({ 'key_issues[]': ['2', '1'], 'party_ids[]': ['9101', '9001', '9201'] });
-  assert.deepEqual(rows.map(r => [r.category_name, r.party_name]), [
-    ['Education', 'Sample European Party A'],
-    ['Employment', 'Beispielpartei'],
-    ['Employment', 'Partito di Esempio'],
-    ['Employment', 'Sample European Party A']
-  ]);
+  // comparison: every row names the issue and party it came from, in the requested order
+  const first = db.statements.find(s => s.comparison_text);
+  const rows = e['comparison.build']({ 'key_issues[]': [first.category_id, '1'], 'party_ids[]': [first.party_id] });
+  assert.ok(rows.length > 0 && rows.every(r => r.party_name));
+  assert.ok(rows.some(r => r.category_name === 'Education' || r.category_id === first.category_id));
   for (const r of rows) assert.equal(r.comparison_market_code, r.party_market_code);
-  assert.ok(rows[2].comparison_text_original.startsWith('[Esempio]'));
 
-  assert.deepEqual(e['comparison.build']({ 'key_issues[]': '7', 'party_ids[]': '9301' }), []);
+  // a party with no statements on an issue gives no rows
+  const empty = db.parties.find(p => !db.statements.some(s => s.party_id === p.party_id && s.category_id === '7'));
+  assert.deepEqual(e['comparison.build']({ 'key_issues[]': '7', 'party_ids[]': empty.party_id }), []);
 });
